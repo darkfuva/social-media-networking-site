@@ -1,6 +1,12 @@
+"use client"
 import './globals.css'
 import { Inter } from 'next/font/google'
-
+import AppHeader from './header/page'
+import Sidebar from './left-sidebar/page'
+import { ThemeProvider } from "styled-components";
+import {GlobalStyles, lightTheme} from '../themes/ThemeConfig'
+import styles from "./page.module.css"
+import RightSidebar from './right-sidebar/page'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -14,8 +20,21 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${styles.bodyDefault}`}>
+      
+      <ThemeProvider theme={lightTheme}>
+        <GlobalStyles />
+        <AppHeader></AppHeader>
+        <div className={`${styles.layout}`}>
+
+        <Sidebar></Sidebar>
+        {children}
+        <RightSidebar></RightSidebar>
+        </div>
+      </ThemeProvider>
+        </body>
     </html>
   )
 }

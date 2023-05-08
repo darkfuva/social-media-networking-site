@@ -1,0 +1,38 @@
+.socialFeed{
+    width: 60vw;
+}
+.postList{
+    max-height: 85vh;
+    height: auto;
+    overflow: hidden scroll;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .postListWrapper{
+        width: 100%;
+    }
+}
+.postCard{
+    margin: 15px 5px;
+    text-align: center;
+    img{
+        max-width: 700px;
+        max-height: 300px;
+    }
+}
+
+.actionsContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border: 1px solid;
+    border-width: 1px 0;
+    margin: 0 0 5px 0
+}
+
+
+@media only screen and (max-width: 600px) {
+    .socialFeed {
+      width: 100%;
+    }
+  }

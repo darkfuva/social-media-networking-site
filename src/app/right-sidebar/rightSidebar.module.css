@@ -1,0 +1,9 @@
+.rightSidebar{
+    height: 93vh;
+    width: 20vw;
+}
+@media only screen and (max-width: 600px) {
+    .rightSidebar {
+      display: none;
+    }
+  }

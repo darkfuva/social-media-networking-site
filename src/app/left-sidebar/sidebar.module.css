@@ -1,0 +1,14 @@
+.sidebar{
+    height: 93vh;
+    width: 20vw;
+}
+.sidebarSection{
+    display: flex;
+    height:29vh
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+      display: none;
+    }
+  }

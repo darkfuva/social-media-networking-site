@@ -1,0 +1,24 @@
+
+.commentListContainer{
+    height: 100%
+}
+.commentList{
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 20px;
+    max-height: 30vh;
+}
+
+
+.commentListActionsContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    .action{
+        display: flex;
+        white-space: nowrap;
+    }
+    .action:hover{
+        cursor: pointer;
+    }
+}
