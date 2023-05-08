@@ -3,7 +3,8 @@
     border: 1px transparent;
     border-width: 1px 1px 1px 1px;
     border-radius: 5px 10px 10px 5px;
-    margin-bottom: 3px;
+    margin-bottom: 10px;
+    box-shadow: 2px 1px 5px lightblue;
 }
 .usernameContainer{
     font-weight: 700;
@@ -12,4 +13,9 @@
 .commentContentContainer{
     text-align: left;
     font-size: 15px;
+}
+.commentItemActionContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }

@@ -4,12 +4,9 @@
 }
 .commentList{
     height: 100%;
-    overflow: auto;
-    padding-bottom: 20px;
     max-height: 30vh;
+    padding-right:5px;
 }
-
-
 .commentListActionsContainer{
     width: 100%;
     display: flex;
